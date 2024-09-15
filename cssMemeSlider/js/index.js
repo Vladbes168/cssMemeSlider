@@ -30,7 +30,7 @@ function addMemesToPage() {
     arrMemes.forEach(({icon, title}) => {
         const img = document.createElement('img')
         img.classList.add('slider__container-item')
-        img.src = icon
+        img.src = icon || 'images/why.jpg'
         sliderContainer.appendChild(img)
     })
 }
@@ -46,8 +46,6 @@ function changeTitle(title) {
     }, 500)
 
 }
-
-
 const allBtn = document.querySelectorAll('.paginations-circle')
 allBtn[0].classList.add('active')
 allBtn.forEach((item, index) => {
@@ -59,7 +57,6 @@ allBtn.forEach((item, index) => {
         item.classList.add('active')
     })
 })
-
 function transformSlides(index) {
     let {title} = arrMemes[index]
     const sliderContainerWidth = document.querySelector('.slider__container').offsetWidth
@@ -67,5 +64,4 @@ function transformSlides(index) {
     sliderContainer.style.transform = `translateX(-${sliderContainerWidth * index}px)`
     changeTitle(title)
 }
-
 })
