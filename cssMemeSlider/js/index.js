@@ -11,12 +11,12 @@ const arrMemes = [
     }
     ,
     {
-        icon: "images\deleting-wrong-file-by-mistake.gif",
+        icon: "https://hookagency.com/wp-content/uploads/2015/10/deleting-wrong-file-by-mistake.gif",
         title: "After deleting permanently the wrong file by mistake"
     }
     ,
     {
-        icon: "images\defending-work-not-at-the-client-meeting.gif",
+        icon: "https://hookagency.com/wp-content/uploads/2015/10/defending-work-not-at-the-client-meeting.gif",
         title: "Defending my work when I’m not at the client meeting"
     }
 ]
@@ -30,7 +30,7 @@ function addMemesToPage() {
     arrMemes.forEach(({icon, title}) => {
         const img = document.createElement('img')
         img.classList.add('slider__container-item')
-        img.src = icon || 'images/why.jpg'
+        img.src = icon
         sliderContainer.appendChild(img)
     })
 }
