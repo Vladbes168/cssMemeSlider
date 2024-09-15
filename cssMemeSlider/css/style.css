@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(14, 11, 11, 0.507);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.slider {
+    width: 80%;
+    height: 60%;
+    border: 2px solid rgb(13, 13, 27);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.slider__container {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.slider__container-item {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle__container {
+    height: 25px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding-inline: 20px;
+}
+.paginations-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid  rgba(101, 101, 245, 0.884);
+    background-color: rgba(101, 101, 245, 0.884);
+    cursor: pointer;
+}
+.paginations-circle.active {
+    border: 2px solid  rgb(12, 12, 29);
+    background-color: rgb(137, 137, 141);
+}
+.paginations-circle:hover {
+    border: 1px solid  rgb(101, 101, 245);
+    background-color: rgb(152, 152, 184);
+}
