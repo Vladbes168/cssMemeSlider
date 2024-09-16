@@ -6,20 +6,41 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="title__container">
-        <h3 class="title">Have a rest!</h3>
-    </div>
+ <body>
+
+
     <div class="slider">
-        <div class="slider__container">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+    
+        <div class="slides">
+            <div class="slide">
+                <img src="images/why.jpg" alt="Image 1">
+                <p>Me every day!</p>
+            </div>
+            <div class="slide">
+                <img src="images/weekend.webp" alt="Image 2">
+                <p>Have a rest!</p>
+            </div>
+            <div class="slide">
+                <img src="images/defending-work-not-at-the-client-meeting.gif" alt="Image 3">
+                <p>After deleting permanently the wrong file by mistake</p>
+            </div>
+            <div class="slide">
+                <img src="images/deleting-wrong-file-by-mistake.gif" alt="Image 4">
+                <p>Defending my work when I’m not at the client meeting</p>
+            </div>
+        </div>
+    
+        <div class="pagination">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+            <label for="slide4" class="dot"></label>
         </div>
     </div>
-    <div class="circle__container">
-        <div class="paginations-circle"></div>
-        <div class="paginations-circle"></div>
-        <div class="paginations-circle"></div>
-        <div class="paginations-circle"></div>
-    </div>
-    <script src="js/index.js"></script>
+    
 </body>
 </html>
